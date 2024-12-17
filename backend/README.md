@@ -10,8 +10,14 @@ Backend server for the Fine Arts Institute management system.
 
 ## Setup & Installation
 
-1. Clone the repository and navigate to the backend folder: ```bash``` ```cd backend```
-2. Install dependencies: ```bash``` ```npm install```
+1. Clone the repository and navigate to the backend folder:
+```bash
+cd backend
+```
+2. Install dependencies:
+```bash
+npm install
+```
 3. Create a `.env` file in the root directory with the following variables: 
 ```
 PORT=3000
@@ -23,10 +29,15 @@ NODE_ENV=development
 ## Running the Server
 
 ### Development Mode:
-```bash``` ```npm run dev```
+```bash
+npm run dev
+```
 
 ### Seeding Data
-To populate the database with initial test data: ```bash``` ```npm run seed```
+To populate the database with initial test data:
+```bash
+npm run seed
+```
 
 ## Demo Accounts
 
