@@ -13,7 +13,13 @@ const submissionSchema = new mongoose.Schema({
   },
   imageUrl: {
     type: String,
-    required: true
+    required: true,
+    validate: {
+      validator: function(v) {
+        return v.startsWith('https://res.cloudinary.com/');
+      },
+      message: props => `${props.value} is not a valid Cloudinary URL!`
+    }
   },
   description: String,
   poem: String,

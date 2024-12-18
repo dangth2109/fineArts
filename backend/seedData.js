@@ -27,7 +27,7 @@ const seedData = async () => {
     
     const admin = await User.create({
       username: 'admin',
-      email: 'admin@example.com',
+      email: 'admin@mail.com',
       password: hashedPassword,
       role: 'admin',
       personalInfo: {
@@ -39,7 +39,7 @@ const seedData = async () => {
 
     const staff = await User.create({
       username: 'staff',
-      email: 'staff@example.com', 
+      email: 'staff@mail.com', 
       password: hashedPassword,
       role: 'staff',
       personalInfo: {
@@ -56,7 +56,7 @@ const seedData = async () => {
 
     const student = await User.create({
       username: 'student',
-      email: 'student@example.com',
+      email: 'student@mail.com',
       password: hashedPassword,
       role: 'student',
       personalInfo: {
@@ -72,8 +72,8 @@ const seedData = async () => {
 
     // Create competition
     const competition = await Competition.create({
-      title: 'Spring Art Competition 2024',
-      description: 'Annual spring art competition for students',
+      title: 'Competition 01',
+      description: 'Competition 01',
       startDate: new Date(),
       endDate: new Date(Date.now() + 30*24*60*60*1000), // 30 days from now
       conditions: [
